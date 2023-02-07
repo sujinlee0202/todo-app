@@ -1,9 +1,12 @@
 :root {
   --color-bg: #b2e0ef;
+  --color-bg-light: #cceaf4;
   --color-bg-dark: #0099cc;
   --color-text: #007aa3;
   --color-text-dark: #003d51;
   --color-line: #003d51;
+  --color-line-light: #cceaf4;
+  --color-white: #FFFFFF;
 }
 
 body {
@@ -25,14 +28,23 @@ code {
 button {
   background-color: transparent;
   border: none;
-  outline: none;
+  padding: 0px;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
   margin: 50px auto;
-  width: 50vw;
-  height: 60vw;
+  width: 80vw;
+  max-width: 600px;
+  min-width: 370px;
+  height: 80%;
   background-color: var(--color-bg);
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
 }
