@@ -11,8 +11,8 @@ export const Header = () => {
         <RiMoonClearFill></RiMoonClearFill>
       </div>
       <div className={styles.filters}>
-        {filters.map((filter) => (
-          <button className={styles.filter}>{filter}</button>
+        {filters.map((filter, index) => (
+          <button className={styles.filter} key={index}>{filter}</button>
         ))}
       </div>
     </header>
