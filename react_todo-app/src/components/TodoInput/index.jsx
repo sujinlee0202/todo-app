@@ -2,15 +2,13 @@ import React, { useCallback, useState } from 'react'
 import styles from './styles.module.css'
 import { FiPlus } from 'react-icons/fi'
 import { v4 as uuidv4} from 'uuid'
-import axios from 'axios'
 
 export const TodoInput = ({ addTodo }) => {
   const [text, setText] = useState('');
 
   const handleSubmit = useCallback((e) => {
-    const todo = { id: uuidv4(), text: text, completed: 'false'}
+    const todo = { id: uuidv4(), text: text, completed: false}
     e.preventDefault()
-    console.log('submit button', text)
     addTodo(todo)
     setText('')
   }, [text, addTodo])
