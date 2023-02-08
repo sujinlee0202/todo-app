@@ -4,6 +4,7 @@ React 를 이용한 To-do app 작성
 ## 사용 기술
 * React
 * PostCSS
+### 추가 라이브러리
 * React-icons
 * UUID
 
